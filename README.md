@@ -1,5 +1,12 @@
 # wp-plugin-webpack-react-basic
-A simple starter kit to develop wp plugin with webpack and react
+A simple starter kit to develop wp plugin with webpack and react.  
+
+This repository has the goal to make simple develop WP Plugin with React.  
+You have to develop react in isolate way and then take it in WP Plugin.  
+
+WP Plugin can activate React in frontend by *shortcode* or insert in *the_content* of posts.  
+
+Also the WP Plugin configuration active React to show data, for example you can import News throw wep api call by React.  
 
 ## How to use
 
@@ -22,7 +29,7 @@ A simple starter kit to develop wp plugin with webpack and react
 
 ## References, Credits and Inspirations
 
-- For webpack 5 configuration
-https://github.com/taniarascia/webpack-boilerplate
+- For webpack 5 configuration  
+[taniarascia/webpack-boilerplate](https://github.com/taniarascia/webpack-boilerplate)
 
 
