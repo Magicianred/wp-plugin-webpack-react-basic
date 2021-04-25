@@ -1,0 +1,68 @@
+{
+  "name": "webpack-boilerplate-edited-for-wp",
+  "version": "1.0.0",
+  "description": "Edited webpack-boilerplate for WP Plugin use",
+  "main": "index.js",
+  "author": "Simone 'Magicianred' Paolucci",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "wpBuild": "cross-env NODE_ENV=production webpack --config config/webpack.wp.prod.js",
+    "lint": "eslint . src config || true",
+    "startBuilded": "http-server ./../dist/"
+  },
+  "keywords": [
+    "webpack",
+    "webpack 5",
+    "webpack boilerplate",
+    "Tania Rascia",
+    "taniarascia/webpack-boilerplate"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^5.0.0-alpha.7",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  },
+  "original-repository": {
+    "type": "git",
+    "url": "git@github.com:taniarascia/webpack-boilerplate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Magicianred/wp-plugin-webpack-react-basic.git"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
