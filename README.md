@@ -2,7 +2,7 @@
 A simple starter kit to develop wp plugin with webpack and react.  
 
 This repository has the goal to make simple develop WP Plugin with React.  
-You have to develop react in isolate way and then take it in WP Plugin.  
+You have to develop react in isolate way, then test it in WP running live version of React app and then build react and zip for create and distribute your plugin.  
 
 WP Plugin can activate React in frontend by *shortcode* or insert in *the_content* of posts.  
 
@@ -21,11 +21,19 @@ Also the WP Plugin configuration active React to show data, for example you can 
 
     [Read more about *webpack-boilerplate*](react/README.md)
 
-2. ### Edit WP Plugin
+2. ### Edit WP Plugin (local version)
+    (after create react app)
+    1. Go to *mgr_wppwr_plugin_local*
+    2. edit constant $localServer with the url of react started version (for example: ```http://localhost:8080```)
+    3. zip folder *mgr_wppwr_plugin_local* and import (and active) it in your Wordpress (or copy folder in *wp-content/plugin/* Wordpress folder)
+    4. start react with *npm start* command
+    5. edit file and see the result inside WP. You can see and correct the design before build the react app
+
+3. ### Edit WP Plugin
     (after create react app)
     1. Go to *mgr_wppwr_plugin*
     2. edit plugin files
-    3. zip folder *mgr_wppwr_plugin* and import it in your Wordpress (or copy folder in *wp-content/plugin/* Wordpress folder)
+    3. zip folder *mgr_wppwr_plugin* and import (and active) it in your Wordpress (or copy folder in *wp-content/plugin/* Wordpress folder)
 
 ## References, Credits and Inspirations
 
